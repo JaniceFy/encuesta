@@ -1,0 +1,104 @@
+.container form .botones {
+    display: flex;
+    /**/
+    flex-wrap: wrap;
+    /**/
+    justify-content: space-between;
+    margin: 20px 0 12px 0;
+}
+
+form .botones .button-wrapper {
+    margin-bottom: 15px;
+    width: calc(100% / 2 - 20px);
+}
+
+.botones .button-wrapper input {
+    height: 45px;
+    /**/
+    width: 100%;
+    /**/
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 16px;
+    border-bottom-width: 2px;
+    transition: all 0.3s ease;
+}
+
+#formQ1 .botones input {
+    outline: none;
+    color: #FFF;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    background: radial-gradient(circle at 10% 20%, rgb(55, 209, 255) 0%, rgb(14, 31, 111) 100.2%);
+}
+
+#formQ1 .botones input:hover {
+    background: radial-gradient(circle at 90% 80%, rgb(55, 209, 255) 0%, rgb(14, 31, 111) 100.2%);
+    /*INVERSE*/
+}
+
+
+
+#formQ1 .questionOne-question .span {
+    margin: 15px 15px 15px 0;
+}
+
+
+/*RADIOS pregunta1*/
+
+#formQ1 .questionOne-details{
+    padding-left: 15px;
+}
+
+#informe{
+    align-items: center;
+    text-align: left;
+    justify-content: center;
+    margin-top: 15px;
+    color: radial-gradient(circle at 10% 20%, rgb(55, 209, 255) 0%, rgb(14, 31, 111) 100.2%);
+}
+
+#formQ1 .questionOne-details .category {
+    display: inline;
+    width: 80%;
+    margin: 14px 0;
+    justify-content: space-between;
+}
+
+.questionOne-details .category label {
+    display: flex;
+    align-items: center;
+}
+
+.questionOne-details .category .dot {
+    height: 18px;
+    width: 18px;
+    background: #D9D9D9;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 5px solid transparent;
+    transition: all 0.3s ease;
+}
+
+#dot-1:checked~.category label .one,
+#dot-2:checked~.category label .two,
+#dot-3:checked~.category label .three,
+#dot-4:checked~.category label .four,
+#dot-5:checked~.category label .five,
+#dot-6:checked~.category label .six{
+    border-color: #D9D9D9;
+    background: rgb(151, 169, 250);
+}
+form input[type="radio"] {
+    display: none;
+}
+/*RADIOS END*/
+
+#answer{
+    padding-left: 15px;
+}
